@@ -1,10 +1,12 @@
+import 'katex/dist/katex.min.css'
 import { marked } from 'marked'
+import markedKatex from 'marked-katex-extension'
 import morphdom from 'morphdom'
-import { highlightAll } from './syntax.js'
 import { enhanceCallouts } from './callouts.js'
+import { highlightAll } from './syntax.js'
 
 marked.setOptions({ gfm: true, breaks: true })
-
+marked.use(markedKatex({ throwOnError: false, strict: false }))
 
 export const setupPreview = ({ getMarkdown, onMarkdownUpdated, previewHtml, profiler }) => {
 	let renderScheduled = false
@@ -43,7 +45,7 @@ export const setupPreview = ({ getMarkdown, onMarkdownUpdated, previewHtml, prof
 					}
 				}
 				return true
-			}
+			},
 		})
 
 		// Update last rendered content

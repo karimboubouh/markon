@@ -9,6 +9,7 @@
 ## Features
 
 - **GFM**: GitHub Flavored Markdown + alerts
+- **Math**: inline `$...$` and block `$$...$$` equations
 - **Syntax**: 250+ languages with highlighting
 - **Split view**: resizable editor & preview
 - **Auto-save**: localStorage persistence
@@ -141,6 +142,16 @@ fn main() {
 ### Text Formatting
 
 This is **bold text**, _italic text_, ~~strikethrough~~, `inline code`, and a [link](https://github.com/metaory/markon).
+
+### Math
+
+Inline math renders inside prose, for example $E = mc^2$ and $\alpha + \beta = \gamma$.
+
+Block math renders centered and scrolls horizontally when needed:
+
+$$
+\mathcal{L}(\theta) = \frac{1}{N}\sum_{i=1}^{N}\ell(f_\theta(x_i), y_i) + \lambda\lVert\theta\rVert_2^2
+$$
 
 ### Lists
 

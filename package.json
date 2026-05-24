@@ -37,7 +37,9 @@
     "@lezer/highlight": "^1.2.0",
     "highlight.js": "^11.9.0",
     "iconify-icon": "3.0.0",
+    "katex": "^0.17.0",
     "marked": "^16.1.2",
+    "marked-katex-extension": "^5.1.9",
     "morphdom": "^2.7.7"
   }
 }

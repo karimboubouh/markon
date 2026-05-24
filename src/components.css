@@ -410,6 +410,23 @@ button {
     }
   }
 
+  /* Math */
+  .katex {
+    color: inherit;
+    font-size: 1.04em;
+  }
+
+  .katex-display {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.2em 0;
+  }
+
+  .katex-error {
+    color: var(--error);
+  }
+
   /* Tables */
   table {
     width: 100%;

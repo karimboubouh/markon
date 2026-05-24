@@ -23,6 +23,7 @@
 ## Features
 
 - **GFM**: GitHub Flavored Markdown + alerts
+- **Math**: inline `$...$` and block `$$...$$` equations
 - **Syntax**: 250+ languages with highlighting
 - **Split views**: resizable editor & preview
 - **Sync views**: bidirectional scroll sync
